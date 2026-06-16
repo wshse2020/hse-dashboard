@@ -27,7 +27,7 @@
             // UPDATED: This now sets the 'authenticated' flag before redirecting
             if (user === "WSHSE" && pass === "Spartacus") {
                 sessionStorage.setItem("authenticated", "true");
-                window.location.href = "Well_Services_HSE_Dashboard.html"; 
+                window.location.href = "dashboard.html"; 
             } else {
                 document.getElementById("error").innerText = "Invalid credentials!";
             }
