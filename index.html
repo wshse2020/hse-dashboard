@@ -24,9 +24,10 @@
             const user = document.getElementById("username").value;
             const pass = document.getElementById("password").value;
 
-            // Note: This is visible to anyone who views the page source
+            // UPDATED: This now sets the 'authenticated' flag before redirecting
             if (user === "WSHSE" && pass === "Spartacus") {
-                window.location.href = "dashboard.html"; 
+                sessionStorage.setItem("authenticated", "true");
+                window.location.href = "Well_Services_HSE_Dashboard.html"; 
             } else {
                 document.getElementById("error").innerText = "Invalid credentials!";
             }
